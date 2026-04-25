@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Box{
+            background-color: rgb(230, 157, 230);
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            color: black;
+            margin: auto;
+
+            transition: 3s;
+            /*transition: ; Time */
+        }
+
+        /*Hover - when we our Mouse and it change the style*/
+
+        #Magic:hover{
+            /*transform: scale(1.2);*/
+            /*scale( 1 - original.change of size value) It is used to change the size of tag*/ 
+            background-color: rgb(176, 14, 141); 
+
+            /*transform: rotate(360deg);*/
+            /*transform: rotateX(360deg)*/
+            /*transform: rotateY(360deg)*/
+            /*transform: translateX(100px);*/
+            /*transform: translateX(-100px);*/
+            /*transform: translateY(100px);*/
+            transform: translateY(-100px);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="Box" id="Magic">2026</div>
+</body>
+</html>
