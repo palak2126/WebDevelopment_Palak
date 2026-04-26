@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(195, 192, 195);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            /*side by side - row format*/
+            justify-content: center;
+            align-items: center;
+        }
+        .product{
+            background-color: white;
+            width: 300px;
+            border: 2px solid rgb(175, 66, 143);
+            margin: 40px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 5px 5px 25px black;
+        }
+        .product img{
+            object-fit: cover;
+            width: 100%;
+            height: 150px;
+            border-radius: 12px;
+        }
+        .product button{
+            background-color: rgb(223, 86, 187);
+            border: none;
+            padding: 15px;
+            border-radius: 12px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        button:hover{
+            background-color: rgb(124, 67, 155);
+            transform: scale(1.02);
+            transition: 2s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/28739257/pexels-photo-28739257.jpeg">
+        <h2>Iphone</h2>
+        <p><del>$100 </del>  $50</p>
+        <button>Add to Card</button>
+    </div>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/21325156/pexels-photo-21325156.jpeg">
+        <h2>Laptop</h2>
+        <p>$75</p>
+        <button>Add to Card</button>
+    </div>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/30563921/pexels-photo-30563921.jpeg">
+        <h2>HeadPhone</h2>
+        <p>$25</p>
+        <button>Add to Card</button>
+    </div>
+
+</body>
+</html>
