@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: cursive;
+            background-color: rgb(220, 221, 219);
+            margin: 0;
+
+        }
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 10px;
+
+        }
+        .product{
+            border: 1px solid black;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px  black;
+            padding-bottom: 15px;
+            transition: 1s ease;
+
+
+        }
+        .product img{
+            border-radius: 12px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product button{
+            background-color: rgb(192, 47, 24);
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        .product:hover{
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="product">
+            <img src="https://images.pexels.com/photos/7333176/pexels-photo-7333176.jpeg">
+            <h2>HeadPhones</h2>
+            <p><del>$750</del> <mark>$650</mark></p>
+            <button>Add To Card</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/5984591/pexels-photo-5984591.jpeg">
+            <h2> Books</h2>
+            <p><del>$500</del> <mark>$350</mark></p>
+            <button>Add To Card</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/33154633/pexels-photo-33154633.jpeg">
+            <h2>Earings</h2>
+            <p><del>$250</del> <mark>$200</mark></p>
+            <button>Add To Card</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg">
+            <h2>Sneakers</h2>
+            <p><del>$300</del> <mark>$250</mark></p>
+            <button>Add To Card</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/1188649/pexels-photo-1188649.jpeg">
+            <h2>Water Bottle</h2>
+            <p><del>$100</del> <mark>$0.99</mark></p>
+            <button>Add To Card</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/14971591/pexels-photo-14971591.jpeg">
+            <h2>FlowerPot</h2>
+            <p><del>$450</del> <mark>$300</mark></p>
+            <button>Add To Card</button>
+        </div>
+    </div>
+</body>
+</html>
